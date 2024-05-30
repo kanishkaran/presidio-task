@@ -52,7 +52,7 @@ class Chatgroq:
         agentexecutor = self.agent_executor(tools, prompt)
         return agentexecutor
 
-chatbot = Chatgroq('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', model_name='mixtral-8x7b-32768')
+chatbot = Chatgroq('', model_name='mixtral-8x7b-32768')
 
 @app.route('/generate', methods=['POST'])
 def generate():
